@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dora Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" sizes="64x64" href="doraemon.png">
+</head>
+<body>
+    <div class="div">
+        <div id="main">
+            <audio src="hit.mp3" id="hitsound" preload="auto"></audio>
+            <audio src="score.mp3" id="scoresound" preload="auto"></audio>
+            <audio src="bgmusic.mp3" id="bgsound" preload="auto"></audio>
+            <p id="score">Score: 0</p>
+            <p id="highscore">High Score: 0</p>
+            <img src="doraemon.png" id="bird">
+            <p id="start">
+                Click to Play<br>
+                <small>Avoid Obstacles • Collect Gadgets</small>
+            </p>
+            <button id="btn" onclick="restartGame()">Restart Game</button>
+            <footer>
+                <p id="copyright">Copyright &copy; 2026 World of Doraemon And Nobita</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,138 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+.div{
+    border: none;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px, 20px, 20px #055081;
+    border-radius: 5px;
+}
+
+#score{
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 2;
+    display: none;
+    user-select: none;
+}
+#main{
+    background: url(background.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    position: relative;
+    border: none;
+    width: 400px;
+    height: 500px;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px #055081;
+    border-radius: 5px;
+}
+
+@keyframes bgMove{
+    from{background-position: 0 0;}
+    to{background-position: 100% 0;}
+}
+
+#bird{
+    top: 200px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    transition: 0s linear;
+    z-index: 2;
+    left: 10px;
+    display: none;
+    user-select: none;
+}
+#start {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-family: monospace;
+    z-index: 3;
+    cursor: default;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    user-select: none;
+
+}
+
+.pipe{
+    position: absolute;
+    width: 60px;
+    border: 3px solid #043244;
+    border-radius: 10px;
+    background-color: #2ecc71;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.toppipe{
+    top: 0;
+}
+
+.bottompipe{
+    bottom: 0;
+}
+
+#btn{
+    position: absolute;
+    display: none;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    z-index: 5;
+    padding: 3px;
+    font-size: 24px;
+    font-family: monospace;
+    border-radius: 5px;
+    border: none;
+    background-color: #043244;
+    color: #ffffff;
+    width: fit-content;
+    user-select: none;
+}
+
+#highscore{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 2;
+    display: none;
+    user-select: none;
+}
+
+#copyright{
+    position: absolute;
+    bottom: 5px;
+    left: 35%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+    z-index: 5;
+    user-select: none;
+}
