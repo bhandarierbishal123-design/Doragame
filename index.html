@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doraemon Adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="div">
+    <div id="main">
+
+        <audio src="hit.mp3" id="hitsound"></audio>
+        <audio src="score.mp3" id="scoresound"></audio>
+        <audio src="coin.mp3" id="coinsound"></audio>
+        <audio src="bgmusic.mp3" id="bgsound"></audio>
+
+        <p id="score">Score: 0</p>
+        <p id="highscore">High Score: 0</p>
+
+        <img src="doraemon.png" id="bird">
+
+        <p id="start">Help Doraemon solve Nobita’s daily problems!<br>Tap to Start</p>
+
+        <button id="btn" onclick="restartGame()">Restart</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
